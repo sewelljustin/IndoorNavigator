@@ -25,7 +25,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Queue;
-
+//Test comment for version control
 public class NavigatorView extends View {
 
     private static final String TAG = "IndoorNavigator";

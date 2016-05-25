@@ -1,3 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="95f65ca16a09a3bddeeef76ef5fabfcb23af9da5">
+        <dex dex="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3c8795090a54b17e096bca2db51f1ca5ee256b2b\classes.dex" />
+    </item>
+    <item
+        jar="U:\Programs\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.2.1_85d10f5c8744bf4f58df818f921db8831f46f93d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="34740f3dc1e71696b262e4ff0caf93b78e769337">
+        <dex dex="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7b55e501bb107ca54efe61e4f699c9037a87b4c4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.2.1_8b003902163d4c0cbaf8fe549228b147fab8f1ef\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.2.1_48784d869ab98a16959ee9b11c73f378224efd2d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-22.2.1_66a13e2c3d3f6a4075d3e842fdf9679102853438\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\JUANKI\AndroidStudioProjects\IndoorNavigator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.2.1_311603475ab57bafc36647f9156ec3eedf9d2a57\classes.dex" />
+    </item>
+
+</items>
