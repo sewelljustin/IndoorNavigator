@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 //Test comment for version control
+// test comment
 public class NavigatorView extends View {
 
     private static final String TAG = "IndoorNavigator";
@@ -196,10 +197,10 @@ public class NavigatorView extends View {
 
         // Get the highest Rssi
         highestRssi = -100;
-        for (int i = 0; i < beaconUuids.length; i++) {
-            if (beaconMap.get(beaconUuids[i]).getRssi() > highestRssi) {
-                highestRssi = beaconMap.get(beaconUuids[i]).getRssi();
-                currentPosition = beaconMap.get(beaconUuids[i]).getQuadrant();
+        for (String beaconUuid : beaconUuids) {
+            if (beaconMap.get(beaconUuid).getRssi() > highestRssi) {
+                highestRssi = beaconMap.get(beaconUuid).getRssi();
+                currentPosition = beaconMap.get(beaconUuid).getQuadrant();
             }
         }
 
@@ -270,8 +271,10 @@ public class NavigatorView extends View {
             currentBeacon = getHighestRssiBeacon();
 
             // If in same position, then position is valid
-            if (currentBeacon.equals(previousBeacon)) {
-                validPosition = true;
+            if (currentBeacon != null) {
+                if (currentBeacon.equals(previousBeacon)) {
+                    validPosition = true;
+                }
             }
 
             Beacon[] validBeacons = beaconNetwork.getNeighborBeacons(previousBeacon);
@@ -404,10 +407,10 @@ public class NavigatorView extends View {
         // Get the beacon with the highest Rssi
         highestRssi = -100; // default highestRssi
         newBeacon = beaconMap.get(beaconUuids[0]); // default newBeacon
-        for (int i = 0; i < beaconUuids.length; i++) {
-            if (beaconMap.get(beaconUuids[i]).getRssi() > highestRssi) {
-                highestRssi = beaconMap.get(beaconUuids[i]).getRssi();
-                newBeacon = beaconMap.get(beaconUuids[i]);
+        for (String beaconUuid : beaconUuids) {
+            if (beaconMap.get(beaconUuid).getRssi() > highestRssi) {
+                highestRssi = beaconMap.get(beaconUuid).getRssi();
+                newBeacon = beaconMap.get(beaconUuid);
             }
         }
 
@@ -427,10 +430,10 @@ public class NavigatorView extends View {
 
         // Get beacon with largest sample count and set current position to beacon's quadrant
         largestSampleCount = 0;
-        for (int i = 0; i < beaconUuids.length; i++) {
-            if (beaconMap.get(beaconUuids[i]).getSampleCount() > largestSampleCount) {
-                largestSampleCount = beaconMap.get(beaconUuids[i]).getSampleCount();
-                position = beaconMap.get(beaconUuids[i]).getQuadrant();
+        for (String beaconUuid : beaconUuids) {
+            if (beaconMap.get(beaconUuid).getSampleCount() > largestSampleCount) {
+                largestSampleCount = beaconMap.get(beaconUuid).getSampleCount();
+                position = beaconMap.get(beaconUuid).getQuadrant();
             }
         }
 
@@ -464,10 +467,10 @@ public class NavigatorView extends View {
         Beacon result = beaconMap.get(beaconUuids[0]);
 
         highestRssi = -100;
-        for (int i = 0; i < beaconUuids.length; i++) {
-            if (beaconMap.get(beaconUuids[i]).getRssi() > highestRssi) {
-                highestRssi = beaconMap.get(beaconUuids[i]).getRssi();
-                result = beaconMap.get(beaconUuids[i]);
+        for (String beaconUuid : beaconUuids) {
+            if (beaconMap.get(beaconUuid).getRssi() > highestRssi) {
+                highestRssi = beaconMap.get(beaconUuid).getRssi();
+                result = beaconMap.get(beaconUuid);
             }
         }
 
